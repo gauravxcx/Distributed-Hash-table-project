@@ -1,0 +1,42 @@
+{
+  "name": "chord-grpc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cleanData": "node cleanData.js",
+    "server": "node node.js",
+    "client": "node client.js",
+    "client": "node ./client/client.js",
+    "web": "node ./web/web.js",
+    "devServer": "nodemon node.js",
+    "devClient": "nodemon client.js",
+    "devWeb": "nodemon ./web/web.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.2",
+    "async": "^1.5.2",
+    "crypto-js": "^3.1.9-1",
+    "express": "^4.17.1",
+    "google-protobuf": "^3.10.0",
+    "grpc": "^1.24.2",
+    "grpc-caller": "^0.13.0",
+    "lodash": "^4.6.1",
+    "minimist": "^1.2.0",
+    "nodemon": "^1.19.4",
+    "xml2js": "^0.4.22"
+  },
+  "devDependencies": {
+    "husky": "^3.0.9",
+    "prettier": "1.18.2",
+    "pretty-quick": "^2.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
